@@ -4,14 +4,18 @@ var SongQueue = Songs.extend({
   initialize: function(){
 
   },
-  events {
-    'ended': function() {
-      this.playFirst();
-    }
+  playFirst: function() {
+    
+    console.log(this.at(0).play);
+    this.at(0).play();
   }
-  playFirst: function() { 
-      this.at(0).play();
-       
-    }
+
+
+  // events: {
+  //   'ended': 'playFirst'
+  // },
+
+  
+  
 
 });
